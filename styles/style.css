@@ -1,3 +1,12 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -47,6 +56,11 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+  transition: opacity .5s linear;
+}
+
+.header__link:hover {
+  opacity: .6;
 }
 
 .header__main-illustration {
@@ -65,6 +79,10 @@
   position: absolute;
   top: 64px;
   right: 0;
+}
+
+.rotation {
+  animation: rotation 20s linear infinite;
 }
 
 .logo_place_header {
@@ -124,6 +142,76 @@
 
 .two-columns__span-accent {
   font-weight: bold;
+}
+
+.techniques {
+  width: 80%;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.cards {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards__item {
+  width: 240px;
+  padding: 0;
+  margin: 0 100px 0 0;
+}
+
+.cards__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  margin: 60px 40px 43px;
+  border-radius: 50%;
+}
+
+.cards__title {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.cards__description {
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.video {
+  margin-top: 100px;
+}
+
+.video__iframes {
+  width: 1050px;
+  margin: 0 auto -50px;
+  padding: 50px 0 0 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.video__iframe {
+  padding: 0;
+  margin: 0;
 }
 
 .digits {
@@ -202,6 +290,11 @@
   list-style-type: none;
 }
 
+.oakley {
+  padding-top: 160px;
+  background-color: #f2f2f2;
+}
+
 .feinman {
   min-height: 790px;
   position: relative;
@@ -242,6 +335,92 @@
   top: 50%;
   color: #2f80ed;
   text-decoration: none;
+  transition: opacity .5s linear;
+}
+
+.feinman__link:hover {
+  opacity: .6;
+}
+
+.khan {
+  padding-top: 105px;
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.khan__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0 0 50px 0;
+}
+
+.khan__quote {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 790px;
+  padding: 0;
+  margin: 0 0 36px 0;
+}
+
+.khan__quote-author {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  padding: 0;
+  margin: 0 0 10px 0;
+  display: block;
+}
+
+.khan__quote-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0 0 68px 0;
+}
+
+.khan__book-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  max-height: 608px;
+  overflow: hidden;
+}
+
+.khan__book-pic {
+  width: 620px;
+  height: 886px;
+  margin: 0 48px 0 0;
+}
+
+.khan__buy-link {
+  text-decoration: none;
+  color: #2f80ed;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  transition: opacity .5s linear;
+}
+
+.khan__buy-link:hover {
+  opacity: .6;
 }
 
 .kaufman {
@@ -260,6 +439,34 @@
   z-index: 0;
   background: url('../images/kaufman-triangle.svg');
   background-size: contain;
+}
+
+.resources {
+  padding: 100px 0 217px;
+  background-color: #f2f2f2;
+}
+
+.resources__logo-zone {
+  margin: 80px auto 0;
+  padding: 0;
+  max-width: 1100px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.resources__logo-link {
+  transition: opacity .5s linear;
+}
+
+.resources__logo-link:hover {
+  opacity: .6;
+}
+
+.resources__logo-image {
+  width: 270px;
+  height: 38px;
 }
 
 .footer {
@@ -317,6 +524,11 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  transition: opacity .5s linear;
+}
+
+.footer__column-link:hover {
+  opacity: .6;
 }
 
 .footer__column-link-item {
